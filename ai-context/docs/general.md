@@ -6,13 +6,13 @@ Sourced from manual statement upload or Plaid integration
 Tech to use:
 
 Monorepo:       pnpm + Turborepo (instead of yarn/lerna)
-Backend:        NestJS
+Backend:        tRPC combined with front
 Frontend:       Next.js + React
 Styling:        Tailwind + shadcn/ui
 Database:       PostgreSQL + Kysely, Kysely migrations
 Validation:     Zod (shared between frontend and backend)
-Auth:           Auth.js or (Clerk / Auth0 if dont want to build)
+Auth:           Clerk
 Testing:        Vitest + Playwright
-Linting:        Biome (or ESLint + Prettier)
+Linting:        Biome
 API contract:   tRPC
 Dev tooling:    Docker Compose, Husky, GitHub Actions

@@ -1,0 +1,23 @@
+{
+  "name": "@budget-mind/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run src/**/*.test.ts"
+  },
+  "devDependencies": {
+    "@budget-mind/typescript-config": "workspace:*",
+    "typescript": "5.9.2",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "zod": "^4.3.6"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@budget-mind/db",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "migrate:up": "tsx src/migrate.ts up",
+    "migrate:down": "tsx src/migrate.ts down"
+  },
+  "dependencies": {
+    "@budget-mind/shared": "workspace:*",
+    "kysely": "^0.28.11",
+    "pg": "^8.19.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@budget-mind/typescript-config": "workspace:*",
+    "@types/node": "^22.15.3",
+    "@types/pg": "^8.18.0",
+    "tsx": "^4.21.0",
+    "typescript": "5.9.2"
+  }
+}
